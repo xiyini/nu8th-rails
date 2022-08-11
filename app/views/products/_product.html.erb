@@ -1,7 +1,14 @@
-<div id="<%= dom_id product %>">
-  <p>
-    <strong>Title:</strong>
+<div id="<%= dom_id product %>" class="column card" >
+    <div class=" block">
     <%= product.title %>
-  </p>
-
+    </div>
+  <div class="card-image">
+    <figure class="image">
+    <%= link_to (image_tag "IMG-20220710-WA0011.jpg"), "https://www.instagram.com/direct/t/340282366841710300949128215137215892537", target: :_blank%>
+    </figure>
+  </div>
+    <br><br>
+    <div class="card-content">
+    <%= product.body %>
+    </div>
 </div>

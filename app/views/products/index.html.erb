@@ -1,14 +1,14 @@
-<section class="section ">
+<section class="section">
+ <div class="container">
   
 <p style="color: green"><%= notice %></p>
 
-  
-
-<div id="products " class="columns">
+<div id="products " class="columns is-multiline">
   <% @products.each do |product| %>
       <%= render product %>
    <% end %>
 </div>
 
 <%= link_to "New product", new_product_path %>
+ </div> 
 </section>

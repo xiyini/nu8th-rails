@@ -1,0 +1,17 @@
+<div id="<%= dom_id game %>">
+  <p>
+    <strong>Product:</strong>
+    <%= game.product_id %>
+  </p>
+
+  <p>
+    <strong>Title:</strong>
+    <%= game.title %>
+  </p>
+
+  <p>
+    <strong>Image:</strong>
+    <%= link_to game.image.filename, game.image if game.image.attached? %>
+  </p>
+
+</div>

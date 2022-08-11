@@ -1,8 +1,9 @@
+<section class="section">
+  <div class="container">
+  
 <p style="color: green"><%= notice %></p>
 
-<div class="columns">
 <%= render @product %>
-</div>
 
 <div>
   <%= link_to "Edit this product", edit_product_path(@product) %> |
@@ -10,3 +11,5 @@
 
   <%= button_to "Destroy this product", @product, method: :delete %>
 </div>
+  </div>
+</section>
